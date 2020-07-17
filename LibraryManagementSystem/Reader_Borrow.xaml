@@ -1,0 +1,37 @@
+﻿<Window x:Class="LibraryManagementSystem.Student_Borrow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LibraryManagementSystem"
+        mc:Ignorable="d"
+        Title="" Height="455" Width="835">
+    <Grid>
+        <ListView x:Name="listView" HorizontalAlignment="Left" Height="292" Margin="21,30,0,0" VerticalAlignment="Top" Width="786" SelectionChanged="listView_SelectionChanged" >
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="序号" Width="50" DisplayMemberBinding="{Binding Path=Count}" />
+
+                    <GridViewColumn Header="书号" Width="130" DisplayMemberBinding="{Binding Path=Id}" />
+
+                    <GridViewColumn Header="书名" Width="150" DisplayMemberBinding="{Binding Path=Name}"/>
+                    <GridViewColumn Header="作者" Width="130" DisplayMemberBinding="{Binding Path=Writer}"/>
+                    <GridViewColumn Header="出版时间" Width="130" DisplayMemberBinding="{Binding Path=PublicTime}"/>
+                    <GridViewColumn Header="价格" Width="60" DisplayMemberBinding="{Binding Path=Price}"/>
+                    <GridViewColumn Header="数量" Width="60" DisplayMemberBinding="{Binding Path=Number}"/>
+                    <GridViewColumn Header="剩余数量" Width="70" DisplayMemberBinding="{Binding Path=Surplus}"/>
+
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <Label Content="书名:" HorizontalAlignment="Left" Margin="34,365,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="name" HorizontalAlignment="Left" Height="23" Margin="76,365,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button Content="查询" HorizontalAlignment="Left" Margin="237,368,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+        <Button x:Name="button" Content="借阅" HorizontalAlignment="Left" Margin="487,368,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_2"/>
+        <Button Content="返回" HorizontalAlignment="Left" Margin="636,368,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <GroupBox Header="可借阅书籍" HorizontalAlignment="Left" Height="326" Margin="10,10,0,0" VerticalAlignment="Top" Width="809"/>
+        <GroupBox Header="" HorizontalAlignment="Left" Height="68" Margin="21,341,0,0" VerticalAlignment="Top" Width="312"/>
+        <GroupBox Header="用户操作" HorizontalAlignment="Left" Height="73" Margin="10,336,0,0" VerticalAlignment="Top" Width="809"/>
+    </Grid>
+</Window>

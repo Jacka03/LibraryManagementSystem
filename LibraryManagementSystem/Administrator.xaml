@@ -1,0 +1,33 @@
+﻿<Window x:Class="LibraryManagementSystem.Administrator"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LibraryManagementSystem"
+        mc:Ignorable="d"
+        Title="" Height="450" Width="650">
+    <Grid>
+        <Label Content="姓名" HorizontalAlignment="Left" Margin="82,112,0,0" VerticalAlignment="Top"/>
+        <Label Content="职工号" HorizontalAlignment="Left" Margin="82,158,0,0" VerticalAlignment="Top"/>
+        <Label Content="性别" HorizontalAlignment="Left" Margin="82,206,0,0" VerticalAlignment="Top"/>
+        <GroupBox Header="管理员" HorizontalAlignment="Left" Height="191" Margin="56,76,0,0" VerticalAlignment="Top" Width="532"/>
+        <Button Content="图书管理" HorizontalAlignment="Left" Margin="90,326,0,0" VerticalAlignment="Top" Width="74" Click="Button_Click"/>
+        <Button Content="读者管理" HorizontalAlignment="Left" Margin="224,326,0,0" VerticalAlignment="Top" Width="76" Click="Button_Click_1"/>
+        <Button Content="退出登录" HorizontalAlignment="Left" Margin="464,326,0,0" VerticalAlignment="Top" Width="76" Click="Button_Click_2"/>
+        <TextBox x:Name="name" HorizontalAlignment="Left" Height="24" Margin="144,113,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="id" IsEnabled="False" HorizontalAlignment="Left" Height="22" Margin="144,161,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="年龄" HorizontalAlignment="Left" Margin="332,112,0,0" VerticalAlignment="Top"/>
+        <Label Content="电话" HorizontalAlignment="Left" Margin="332,158,0,0" VerticalAlignment="Top"/>
+        <Label Content="密码" HorizontalAlignment="Left" Margin="332,206,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="age" HorizontalAlignment="Left" Height="24" Margin="386,113,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="175"/>
+        <TextBox x:Name="phone" HorizontalAlignment="Left" Height="22" Margin="386,161,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="175"/>
+        <PasswordBox x:Name="password" HorizontalAlignment="Left" Height="24" Margin="386,207,0,0" VerticalAlignment="Top" Width="175"/>
+        <Button Content="修改信息" HorizontalAlignment="Left" Margin="350,326,0,0" VerticalAlignment="Top" Width="76" Click="Button_Click_3"/>
+        <GroupBox Header="管理员操作" HorizontalAlignment="Left" Height="74" Margin="56,296,0,0" VerticalAlignment="Top" Width="532"/>
+        <Label Content="欢迎管理员" HorizontalAlignment="Left" Margin="256,18,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <CheckBox x:Name="boy" Content="男" HorizontalAlignment="Left" Margin="155,212,0,0" VerticalAlignment="Top" Checked="boy_Checked"/>
+        <CheckBox x:Name="girl" Content="女" HorizontalAlignment="Left" Margin="220,212,0,0" VerticalAlignment="Top" Checked="girl_Checked"/>
+        <GroupBox Header="" HorizontalAlignment="Left" Height="43" Margin="144,191,0,0" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>

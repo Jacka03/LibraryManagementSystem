@@ -1,0 +1,31 @@
+﻿<Window x:Class="LibraryManagementSystem.Adaim_Register"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LibraryManagementSystem"
+        mc:Ignorable="d"
+        Title="管理员注册" Height="500" Width="350">
+    <Grid>
+        <Label Content="姓名" HorizontalAlignment="Left" Margin="68,64,0,0" VerticalAlignment="Top"/>
+        <Label Content="账号" HorizontalAlignment="Left" Margin="68,109,0,0" VerticalAlignment="Top"/>
+        <Label Content="性别" HorizontalAlignment="Left" Margin="68,158,0,0" VerticalAlignment="Top"/>
+        <Label Content="年龄" HorizontalAlignment="Left" Margin="68,203,0,0" VerticalAlignment="Top"/>
+        <Label Content="手机号" HorizontalAlignment="Left" Margin="68,257,0,0" VerticalAlignment="Top"/>
+        <Label Content="密码" HorizontalAlignment="Left" Margin="68,304,0,0" VerticalAlignment="Top"/>
+        <Label Content="确认密码" HorizontalAlignment="Left" Margin="68,345,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="name" HorizontalAlignment="Left" Height="23" Margin="137,66,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="id" HorizontalAlignment="Left" Height="23" Margin="137,109,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="age" HorizontalAlignment="Left" Height="23" Margin="137,205,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="phone" HorizontalAlignment="Left" Height="23" Margin="137,257,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="password" HorizontalAlignment="Left" Height="23" Margin="137,304,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="password1" HorizontalAlignment="Left" Height="23" Margin="137,345,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="button1" Content="注册" HorizontalAlignment="Left" Margin="68,410,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button Content="返回" HorizontalAlignment="Left" Margin="182,410,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+        <CheckBox Content="男" HorizontalAlignment="Left" Margin="153,164,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked"/>
+        <CheckBox Content="女" HorizontalAlignment="Left" Margin="216,164,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked_1"/>
+        <GroupBox Header="管理员信息" HorizontalAlignment="Left" Height="359" Margin="39,33,0,0" VerticalAlignment="Top" Width="255"/>
+        <GroupBox Header="" HorizontalAlignment="Left" Height="44" Margin="137,144,0,0" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>
